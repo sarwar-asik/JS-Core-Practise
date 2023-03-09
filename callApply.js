@@ -34,4 +34,4 @@ const Ponku = {
 };
 
 book.call(Ponku, "Ponku", 51223);
-console.log("ponku", Ponku.bookings);
+// console.log("ponku", Ponku.bookings);
