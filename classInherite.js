@@ -10,8 +10,7 @@ Person.prototype.calculateAge = function (year) {
 
 const asik = new Person("asik", 1999);
 console.log("age", asik.calculateAge(2023));
-
-const Student = function (name, birthYear, subject) {
+                               const Student = function (name, birthYear, subject) {
   //   (this.name = name), (this.birthYear = birthYear), (this.subject = subject);
   Person.call(this, name, birthYear);
   this.subject = subject;
