@@ -2,7 +2,7 @@
 
 // console.log("started index.js".green.bold.underline);
 
-console.log("<===--------start========>");
+console.log("<===--------start========> index.js");
 
 const CarProto = {
   totalProfit() {
@@ -17,9 +17,7 @@ const CarProto = {
 
 const m8 = Object.create(CarProto);
 m8.creator("BMW", 10000, 5);
-console.log(m8, "m8");
-
+// console.log(m8, "m8");
 const zing = Object.create(CarProto);
-
 zing.creator("Zing", 3000, 8);
-console.log(zing, "zing");
+// console.log(zing, "zing");
