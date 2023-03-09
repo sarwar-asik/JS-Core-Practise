@@ -44,4 +44,7 @@ Promise.all([promise1, promise2])
     .map(url =>
         fetch(url)
         .then(res =>res.json())))
-  .then(console.log)
+            .then(data =>{
+              console.log("totalData",data)
+              })
+                .catch(error =>console.log(error))
