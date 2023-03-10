@@ -28,6 +28,7 @@ try {
   //   console.log(error, "and", totalError);
 }
 
+//  ** use await for getting an message neither site will crash
 (async () => {
   try {
     await Promise.reject("Valo are lagena");
@@ -37,6 +38,41 @@ try {
       message: error.message,
       stack: error.stack,
     };
-    console.log(error, "and", totalError);
+    // console.log(error, "and", totalError);
   }
 })();
+
+
+// Create My Error  
+class MyError extends Error{
+    constructor(message){
+        super(message)
+        this.name ="MyError ta Ami  banaichi class dia"
+    }
+}
+// throw new MyError("MyError k call disi")
+
+
+class DataBaseError extends Error{
+    constructor(message){
+        super(message)
+        this.name =" DataBaseError name ta Ami  banaichi class dia"
+        this.message =" DataBaseError message ta Ami  banaichi class dia"
+    }
+}
+
+try{
+    throw new DataBaseError()
+}
+catch(error){
+    const totalError = {
+        name: error.name,
+        message: error.message,
+        stack: error.stack,
+      };
+      console.log(error,"and",totalError);
+}
+
+
+
+
