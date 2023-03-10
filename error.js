@@ -43,7 +43,7 @@ try {
 })();
 
 
-// Create My Error  
+// Create My custom Error  //////
 class MyError extends Error{
     constructor(message){
         super(message)
@@ -52,7 +52,6 @@ class MyError extends Error{
 }
 // throw new MyError("MyError k call disi")
 
-
 class DataBaseError extends Error{
     constructor(message){
         super(message)
@@ -60,7 +59,6 @@ class DataBaseError extends Error{
         this.message =" DataBaseError message ta Ami  banaichi class dia"
     }
 }
-
 try{
     throw new DataBaseError()
 }
