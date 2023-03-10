@@ -68,7 +68,7 @@ catch(error){
         message: error.message,
         stack: error.stack,
       };
-      console.log(error,"and",totalError);
+      console.table(error,"and",totalError);
 }
 
 
